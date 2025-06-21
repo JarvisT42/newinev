@@ -43,7 +43,9 @@ Route::get('/user-page', function () {
 })->middleware('auth',  'is_admin:admisn');
 
 
-
+Route::get('/sample', function () {
+    return Inertia::render('sample');
+});
 
 require __DIR__ . '/settings.php';
 require __DIR__ . '/auth.php';
