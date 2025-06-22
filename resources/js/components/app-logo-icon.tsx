@@ -2,7 +2,7 @@ import { SVGAttributes } from 'react';
 
 export default function AppLogoIcon(props: SVGAttributes<SVGElement>) {
     return (
-        <div style={{ display: 'inline-block', borderRadius: '100px', overflow: 'hidden' }}>
+        <div style={{ display: 'inline-block', borderRadius: '10px', overflow: 'hidden' }}>
             <svg
                 version="1.1"
                 id="Layer_1"
