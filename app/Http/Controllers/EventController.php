@@ -19,6 +19,11 @@ class EventController extends Controller
 
         return back()->with('success', 'Event created successfully!');
     }
+    public function apiIndex()
+    {
+      $events = Event::all();
+    return response()->json($events); // Send as JSON for React to consume
+    }
 
     public function index($view)
     {
